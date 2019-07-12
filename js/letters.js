@@ -41,12 +41,6 @@ function countLetters(counter, sample_text) {
     return;
   }
 
-  // for (var key in counter) {
-  //   if (key === sample_text[0].toLowerCase()) {
-  //     counter[key]++;
-  //   }
-  // }
-
   if (counter.hasOwnProperty(sample_text[0].toLowerCase())) {
     counter[sample_text[0].toLowerCase()]++;
   }
@@ -59,5 +53,3 @@ $(document).ready(function() {
   countLetters(counter, sample_text);
   $("#result").html(JSON.stringify(counter));
 });
-
-console.log(counter);
